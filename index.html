@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Tarea Final Modulo 3 | Esteban Arroyo</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row bg-primary py-3">
+            <h1 id="tituloPpal" class="text-center display-5 text-light fw-bold">Evaluación Final del Módulo 3</h1>
+            <h3 id="tituloPpal" class="text-center text-light fw-bold">Esteban Arroyo</h3>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center align-content-center">
+            <div class="col text-center">
+                <div class="col border border-dark pb-2">
+                    <h3 class="bg-info text-light text-center py-2">Agregar texto en un párrafo</h3>
+                    <p id="agregarTexto">Esta es una <span id="primero" class="text-primary fw-bold"></span> para agregar <span id="segundo" class="text-primary fw-bold"></span> con JQuery</p>
+                    <div class="col">
+                        <button id="adjuntar" class="btn btn-primary border border-dark">Adjuntar datos al párrafo</button>
+                    </div>
+                    <div class="col mt-2">
+                        <button id="obtenerData" class="btn btn-success border border-dark">Objener datos adjuntos al párrafo</button>
+                    </div>
+
+                    <div class="col mt-2">
+                        <p id="dataAgregada"></p>
+                    </div>
+
+                    <div class="col mt-2">
+                        <button id="remover" class="btn btn-danger border border-dark">Remover</button>
+                    </div>
+
+
+
+                </div>
+                <div class="col border border-dark pb-2 mt-2">
+                    <h3 class="bg-info text-light text-center py-2">Cambiar el color de un párrafo</h3>
+                    <div id="textoColores">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, modi!</p>
+                    </div>
+                    <div class="col">
+                        <button id="color" class="btn btn-primary border border-dark">Presione Aquí</button>
+                        <button id="remover2" class="btn btn-danger border border-dark">Remover</button>
+                    </div>
+                </div>
+                <div class="col border border-dark pb-2 mt-2">
+                    <h3 class="bg-info text-light text-center py-2">Sacar una imagen con el toggle</h3>
+                    <img id="imagen1" src='imagen.jpg' class='img-fluid'>
+                    <div class="col pt-3">
+                        <button id="desararecerIMG" class="btn btn-primary border border-dark">Presione Aquí</button>
+                    </div>
+                </div>
+                <div class="col border border-dark pb-2 mt-2">
+                    <h3 class="bg-info text-light text-center py-2">Agregar un texto al final de un párrafo(append)</h3>
+                    <p id="textoAgregado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.</p>
+                    <div class="col">
+                        <button id="agregarTXT" class="btn btn-primary border border-dark">Presione Aquí</button>
+                        <button id="remover3" class="btn btn-danger border border-dark">Remover</button>
+                    </div>
+                </div>
+                <div class="col border border-dark pb-2 mt-2">
+                    <h3 class="bg-info text-light text-center py-2">Solicitar el ingreso de texto por un Textinput y mostrar el contenido ingresado al presionar un botón</h3>
+                    <p id="valorIngresado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.</p>
+                    <form>
+                        <div class="row g-3 justify-content-center align-items-center pb-3">
+                            <div class="col-auto"><label for="color" class="col-form-label">Color: </label></div>
+                            <div class="col-auto"><input type="text" class="form-control" name="color" id="color" placeholder="texto"></div>
+                        </div>
+                        <p id="valorIngresado2"></p>
+                        <button id="obtieneValor" class="btn btn-primary">Devuelve el valor del primer campo de entrada</button>
+                    </form>
+                </div>
+                <div class="col border border-dark pb-2 mt-2">
+                    <h3 class="bg-info text-light text-center py-2">Aplicar el efecto fadeIn y fadeOut en una imagen</h3>
+                    <img id="imagen2" src='imagen.jpg' class='img-fluid'>
+                    <div class="row g-3 justify-content-center align-items-center py-2">
+                        <div class="col-auto"><button id="fadeOut" class="btn btn-success border border-dark">Click en fadeOut</button></div>
+                        <div class="col-auto"><button id="fadeIn" class="btn btn-primary border border-dark">Click en fadeIn</button></div>
+                    </div>
+                </div>
+                <div class="col border border-dark pb-2 mt-2">
+                    <h3 class="bg-info text-light text-center py-2">Implemente el método focus mediante un textinput y un botón</h3>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.</p>-->
+                    <form>
+                        <div class="row g-3 justify-content-center align-items-center pb-3">
+                            <div class="col-auto"><input type="text" class="form-control" name="texto" id="texto" placeholder="Escriba un texto"></div>
+                            <div class="col-auto"><button id="onfocus" class="btn btn-primary">Presione Aquí</button></div>
+                            <div class="col-auto">
+                                <p id="spanText" style="display: none;">Se ha implementado el Focus!!</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col border border-dark pb-2">
+                    <h3 class="bg-info text-light text-center py-2">Haga aparecer y desaparecer un párrafo(hide y show)</h3>
+                    <p id="textoEfecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aut?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, harum?
+                    </p>
+                    <div class="row g-3 justify-content-center align-items-center">
+                        <div class="col-auto">
+                            <button id="hideText" class="btn btn-primary border border-dark">Haga clic para desaparecer el parrafo</button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="showText" class="btn btn-success border border-dark">haga clic para volver a aparecer el párrafo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col border border-dark pb-2">
+                    <h3 class="bg-info text-light text-center py-2">Aplique el efecto slideUp y slideDown sobre un párrafo</h3>
+                    <p id="textoSlide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veniam.<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ea?<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aperiam?
+                    </p>
+                    <div class="row g-3 justify-content-center align-items-center">
+                        <div class="col-auto">
+                            <button id="slideUp" class="btn btn-primary border border-dark">Click en Slide UP</button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="slideDown" class="btn btn-success border border-dark">Click en Slide Down</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark py-3">
+        <div class="row">
+            <h5 class="text-center text-light">footer</h5>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#adjuntar').click(function() {
+                $('#agregarTexto').data('prueba', {
+                    first: 'actividad',
+                    last: 'contenido'
+                });
+                $("span:first").text($("#agregarTexto").data("prueba").first);
+                $("span:last").text($("#agregarTexto").data("prueba").last);
+                //$('#agregarTexto').data('primer', 'actividad');
+                //$('#primero').text($("#agregarTexto").data("primer"));
+                //$('#agregarTexto').data('segun', 'contenido');
+                //$('#segundo').text($("#agregarTexto").data("segun"));
+            });
+
+            $('#remover').click(function() {
+                $("span:first").text("");
+                $("span:last").text("");
+                $("#dataAgregada").text("");;
+            });
+
+            $('#obtenerData').click(function() {
+                $("#dataAgregada").text("Los datos agregados son: " +
+                    $("#agregarTexto").data("prueba").first + " y " + $("#agregarTexto").data("prueba").last);
+            });
+
+
+            $('#color').click(function() {
+                $('#textoColores').addClass('text-danger fw-bold')
+            });
+
+            $('#remover2').click(function() {
+                $('#textoColores').removeClass('text-danger fw-bold')
+            });
+
+            $('#desararecerIMG').click(function() {
+                $('#imagen1').toggle();
+            });
+
+            $('#agregarTXT').click(function() {
+                $('#textoAgregado').append('<span id="nuevoTexto"> Nuevo texto agregado al final del parrafo<span>');
+            });
+
+            $('#remover3').click(function() {
+                //$('#textoAgregado').remove(":contains('Nuevo texto agregado al final del parrafo')");
+                $('#nuevoTexto').remove();
+            });
+
+            $('#obtieneValor').click(function(e) {
+                e.preventDefault();
+                let valor = $('input:text').val();
+                $('#valorIngresado').css('color', `${valor}`);
+                $('#valorIngresado2').text('Se ha seleccionado el color de texto: ' + valor);
+            });
+
+            $('#fadeIn').click(function() {
+                $('#imagen2').fadeIn("slow");
+            });
+
+            $('#fadeOut').click(function() {
+                $('#imagen2').fadeOut("slow");
+            });
+
+            $('#onfocus').click(function(e) {
+                e.preventDefault();
+                $('input:text').focus();
+                $('#spanText').css('display', 'inline');
+                $('#spanText').addClass('text-primary fw-bold');
+            });
+
+            $('#hideText').click(function() {
+                $('#textoEfecto').hide();
+            });
+
+            $('#showText').click(function() {
+                $('#textoEfecto').show();
+            });
+
+            $('#slideUp').click(function() {
+                $('#textoSlide').slideUp("slow");
+            });
+
+            $('#slideDown').click(function() {
+                $('#textoSlide').slideDown("slow");
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>
